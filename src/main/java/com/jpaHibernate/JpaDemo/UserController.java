@@ -12,17 +12,17 @@ public class UserController {
     @Autowired
     UserService userService;
 
-    @PostMapping("add")
+    @PostMapping("/add")
     public String addUser(@RequestBody User user) {
         return userService.addUser(user);
     }
 
-    @GetMapping("getAll")
+    @GetMapping("/getAll")
     public List<User> getALl() {
         return userService.getAll();
     }
 
-    @GetMapping("get/{id}")
+    @GetMapping("/get/{id}")
     public User getUser(@PathVariable int id) {
         return userService.getUser(id);
     }
