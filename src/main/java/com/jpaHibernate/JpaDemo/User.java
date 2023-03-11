@@ -12,11 +12,11 @@ public class User {
 
     @Id // annotation to tell that this is primary key in my db
     @Column(name = "user_id") // to change column name in db
-    int id;
+    private int id;
 
-    String name;
-    int age;
-    int mobNo;
+    private String name;
+    private int age;
+    private int mobNo;
 
     public User() {
     }
